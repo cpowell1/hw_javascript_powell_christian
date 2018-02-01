@@ -16,13 +16,21 @@ function howdy(person, message) {
 var message = howdy('Christian Powell', 'Good Morning!');
 console.log(message);
 
-var numba = function numbalength(string) {
-    if (string < 7) {
+
+var numba = function (string) {
+    if (string.length < 7) {
         console.log('What a short little word!');
-    } else if (string === 7) {
+    } else if (string.length === 7) {
         console.log('7, what a perfect choice!');
     } else {
         console.log("I'm sorry, but that's too many to count.");
     }
-}
-;
+};
+numba('7');
+numba('seventy');
+numba('university');
+
+var inception = function display(favMovie) {
+    console.log(favMovie + ' ' + 'is a fantastic movie.');
+};
+inception('21 Jump Street');
