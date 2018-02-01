@@ -16,4 +16,13 @@ function howdy(person, message) {
 var message = howdy('Christian Powell', 'Good Morning!');
 console.log(message);
 
-
+var numba = function numbalength(string) {
+    if (string < 7) {
+        console.log('What a short little word!');
+    } else if (string === 7) {
+        console.log('7, what a perfect choice!');
+    } else {
+        console.log("I'm sorry, but that's too many to count.");
+    }
+}
+;
